@@ -1,0 +1,45 @@
+@font-face {
+    font-family: yekan;
+    src: url(./assets/B_Yekan/Yekan.ttf);
+}
+
+* {
+    font-family: yekan;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.linear-primary{
+    background: linear-gradient(180deg, #EBF3FF -7.33%, #FFFFFF 76.21%);
+
+}
+
+@media (prefers-color-scheme) {
+.dark .dark\:linear-primary-dark{
+        background: linear-gradient(180deg, rgba(2, 103, 255, 0.25) -25.32%, rgba(26, 32, 44, 0) 88.96%);
+    }
+  }
+
+.linear-circle{
+    background-image: linear-gradient(0deg, rgba(239, 235, 255, 0) 32.45%, #EBEBFB 79.35%);
+
+}
+
+@media (min-width: 768px) {
+    .dark\:bg-\[\#081021\]:is(.dark *) {
+        background-color: transparent !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .dark\:bg-\[\#1B293C\]:is(.dark *) {
+        background-color: transparent !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .dark\:bg-\[\#0B192D\]:is(.dark *) {
+        background-color: transparent;
+    }
+}

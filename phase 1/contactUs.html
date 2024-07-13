@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./theme.js" defer></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-white dark:bg-[#060C18]">
+    <header>
+        <div
+            class="flex relative items-center py-3 px-4 shadow-[0_4px_18px_0_#1848900F] md:shadow-none md:py-4 md:px-24">
+            <button class="w-6 h-6 md:hidden"><i class="fas fa-bars dark:text-white"></i></button>
+            <div class="mx-auto md:mx-0 text-[#141414] text-base font-semibold dark:text-white">کوئرا لیست</div>
+            <ul class="hidden md:flex ml-auto mr-[72px] gap-[72px]">
+                <li class="text-base font-semibold text-[#666666] dark:text-[#CFCFCF]"><a href="./index.html">صفحه
+                        اصلی</a></li>
+                <li class="text-base font-semibold text-[#666666] dark:text-[#CFCFCF]"><a href="./about.html">درباره
+                        ما</a></li>
+                <li class="text-base font-semibold text-[#2C7EF8] dark:text-[#037FFF]"><a href="./contactUs.html">ارتباط
+                        با ما</a></li>
+            </ul>
+            <div class="hidden md:flex gap-4 items-center">
+                <button class="rounded-md text-white bg-[#2C7EF8] py-2 px-6 dark-[#3A86F8]">ورود به اپلیکیشن</button>
+                <button id="btn-theme"
+                    class="border border-[#E3E3E3] rounded-md flex items-center justify-center w-10 h-10 text-2xl text-[#5C5F61] dark:text-[#D8D8D8]"><i
+                        class="fa-duotone fa-sun-bright"></i></button>
+            </div>
+        </div>
+
+    </header>
+    <main class="mx-4 md:mx-64 md:mt-16">
+        <div class="flex flex-col items-center mt-4 gap-4 md:flex-row md:items-stretch md:border md:border-[#F5F6F8] md:rounded-3xl md:py-10 md:px-8 md:shadow-[0_4px_63px_0_#00000008]">
+            <div class="flex flex-col justify-between md:border-l md:pl-8">
+                <div class="text-center md:text-right">
+                    <h1 class="text-2xl font-bold text-[#141414] leading-10 md:text-[40px] md:leading-[70px] dark:text-white">تماس با ما
+                    </h1>
+                    <p class="text-sm font-normal text-[#141414] leading-7 md:text-xl md:text-[#6F7076] md:leading-9 dark:text-white">
+                        چیزی هست که بخوای ازم بپرسی؟ خوشحال
+                        میشم بتونم بهت کمکی کنم.</p>
+                    <div class="hidden md:flex gap-2 mt-6">
+                        <i class="fa-regular fa-phone text-base dark:text-white"></i>
+                        <span class="dark:text-[#E6E6E6]">09339029356</span>
+                    </div>
+                    <div class="hidden md:flex gap-2 mt-6">
+                        <i class="fa-regular fa-envelope text-base dark:text-white"></i>
+                        <span class="dark:text-[#E6E6E6]">arghavanrazzazan@gmail.com</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex gap-8 mt-auto">
+                    <a href="https://github.com/arqa1" target="_blank" class="flex justify-center items-center"><i
+                            class="fa-brands fa-github text-3xl dark:text-white"></i></a>
+                    <a href="https://t.me/Arqa1_1999" class="flex justify-center items-center"><i
+                            class="fa-brands fa-telegram text-3xl dark:text-white"></i></a>
+                    <a href="https://www.linkedin.com/in/arghavan-razzazan1999fd" target="_blank"
+                        class="flex justify-center items-center"><i class="fa-brands fa-linkedin text-3xl dark:text-white"></i></a>
+                </div>
+            </div>
+            <div class="border border-[#F5F6F8] p-4 rounded-2xl bg-white shadow-[0_4px_63px_0_#00000008] md:border-0 md:shadow-none dark:text-[#0B192D] dark:bg-[#0B192D]">
+                <form action="" method="post">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex gap-4">
+                            <div class="flex flex-col gap-2">
+                                <label for="first-name"
+                                    class="text-xs font-semibold text-[#070D31] leading-5 md:text-base dark:text-white">نام:</label>
+                                <input id="first-name" type="text" placeholder="نام شما"
+                                    class="border border-[#E6E6E6] w-[140px] py-3 px-2 rounded-md md:w-auto dark:bg-[#0B192D]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="last-name" class="text-xs font-semibold text-[#070D31] leading-5 md:text-base dark:text-white">نام
+                                    خانوادگی:</label>
+                                <input id="last-name" type="text" placeholder="نام خانوادگی شما"
+                                    class="border border-[#E6E6E6] w-[140px] py-3 px-2 rounded-md md:w-auto dark:bg-[#0B192D]">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="email" class="text-xs font-semibold text-[#070D31] leading-5 md:text-base dark:text-white">ایمیل:</label>
+                            <input id="email" type="email" placeholder="ایمیل"
+                                class="border border-[#E6E6E6] py-3 px-2 rounded-md dark:bg-[#0B192D]">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="phone" class="text-xs font-semibold text-[#070D31] leading-5 md:text-base dark:text-white">شماره
+                                تماس:</label>
+                            <input id="phone" type="email" placeholder="شماره تماس شما"
+                                class="border border-[#E6E6E6] py-3 px-2 rounded-md dark:bg-[#0B192D]">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="message" class="text-xs font-semibold text-[#070D31] leading-5 md:text-base dark:text-white">متن پیام
+                                شما:</label>
+                            <textarea id="message" placeholder="متن پیام شما" rows="5"
+                                class="border border-[#E6E6E6] py-3 px-2 rounded-md resize-none dark:bg-[#0B192D]"></textarea>
+                        </div>
+                        <input type="submit" value="ارسال پیام"
+                            class="bg-[#2C7EF8] text-white font-semibold leading-5 text-xs py-2 px-10 rounded-lg md:text-lg">
+                    </div>
+                </form>
+            </div>
+            <div class="flex gap-4 w-full md:hidden">
+                <div
+                    class="border border-[#F5F6F8] rounded-xl bg-white py-3 px-2 shadow-[0_4px_63px_0_#00000008] flex gap-2 items-center dark:bg-[#0B192D]">
+                    <div class="w-8 h-8 bg-[#F5FBFF] rounded-full flex justify-center items-center">
+                        <i class="fa-regular fa-envelope text-base"></i>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] font-bold leading-4 text-[#242424] dark:text-white">ایمیل</span>
+                        <span
+                            class=" text-[10px] font-normal leading-4 text-[#242424] dark:text-white">arghavanrazzazan@gmail.com</span>
+                    </div>
+                </div>
+                <div
+                    class="border border-[#F5F6F8] rounded-xl bg-white py-3 px-2 grow shadow-[0_4px_63px_0_#00000008] flex gap-2 items-center dark:bg-[#0B192D]">
+                    <div class="w-8 h-8 bg-[#F5FBFF] rounded-full flex justify-center items-center">
+                        <i class="fa-regular fa-phone text-base"></i>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] font-bold leading-4 text-[#242424] dark:text-white">تلفن</span>
+                        <span class=" text-[10px] font-normal leading-4 text-[#242424] dark:text-white">09339029356</span>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border border-[#F5F6F8] rounded-xl flex justify-center gap-4 w-full bg-white py-3 px-2 shadow-[0_4px_63px_0_#00000008] md:hidden dark:bg-[#0B192D]">
+                <div class="w-8 h-8 bg-[#F5FBFF] rounded-full flex justify-center items-center">
+                    <a href="https://github.com/arqa1" target="_blank" class="flex justify-center items-center"><i
+                            class="fa-brands fa-github text-base"></i></a>
+                </div>
+                <div class="w-8 h-8 bg-[#F5FBFF] rounded-full flex justify-center items-center">
+                    <a href="https://t.me/Arqa1_1999" class="flex justify-center items-center"><i
+                            class="fa-brands fa-telegram text-base"></i></a>
+                </div>
+                <div class="w-8 h-8 bg-[#F5FBFF] rounded-full flex justify-center items-center">
+                    <a href="https://www.linkedin.com/in/arghavan-razzazan1999fd" target="_blank"
+                        class="flex justify-center items-center"><i class="fa-brands fa-linkedin text-base"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mx-4 mt-10">
+        <div class="flex justify-center items-center gap-6">
+            <div class="h-px bg-[#AFAFAF] w-24 md:w-56"></div>
+            <div class="text-base font-semibold text-[#141414] md:text-xl dark:text-white">کوئرا لیست</div>
+            <div class="h-px bg-[#AFAFAF] w-24 md:w-56"></div>
+        </div>
+        <div class="mt-10 md:mx-40">
+            <div class="flex flex-col gap-8 md:flex-row md:justify-between">
+                <div class="md:order-2">
+                    <div>
+                        <h3 class="text-sm font-bold text-[#242424] leading-6 md:text-base dark:text-white">با ما در
+                            ارتباط باش</h3>
+                        <p
+                            class="text-xs font-normal text-[#242424] leading-5 mt-2 md:text-base md:w-[334px] dark:text-white">
+                            اگه میخوای اولین نفری باشی که از فیچرهای
+                            جدید و
+                            تخفیفات با
+                            خبر بشی.</p>
+                    </div>
+                    <div class="flex mt-6">
+                        <input
+                            class="border border-[#A1A1A1] border-l-0 py-2.5 px-6 rounded-r-[10px] w-full dark:bg-[#060C18]"
+                            type="email" placeholder="ایمیل">
+                        <button class="border border-[#A1A1A1] border-r-0 py-1 px-1 rounded-l-[10px]">
+                            <input class="bg-[#2C7EF8] py-2.5 px-4 rounded-lg text-white text-sm" type="submit"
+                                value="ارسال">
+                        </button>
+                    </div>
+                </div>
+                <div class="flex gap-4 md:flex-col">
+                    <div
+                        class="border border-[#F5F6F8] px-4 flex flex-col items-center justify-center gap-4 rounded-2xl md:border-0 md:order-3 md:flex-row md:gap-2 dark:bg-[#081021]">
+                        <div
+                            class="bg-[#F5FBFF] w-10 h-10 rounded-full flex justify-center items-center md:bg-inherit dark:bg-[#1B293C]">
+                            <i class="fa fa-map-marker text-[#2C7EF8] md:text-[#242424] dark:text-white"
+                                aria-hidden="true"></i>
+                        </div>
+                        <p
+                            class="text-[10px] font-normal text-[#242424] text-center w-[124px] text-sm md:w-[330px] md:text-right dark:text-[#F5FBFF]">
+                            آدرس دفتر مرکزی: پونک -
+                            خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div
+                            class="border border-[#F5F6F8] flex items-center py-7 px-4 rounded-2xl gap-2 md:border-0 md:order-2 md:py-0 dark:bg-[#081021]">
+                            <div
+                                class="bg-[#F5FBFF] w-10 h-10 rounded-full flex justify-center items-center md:bg-inherit dark:bg-[#1B293C]">
+                                <i class="fa fa-phone text-[#2C7EF8] md:text-[#242424] dark:text-white"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <p class="text-[10px] font-normal text-[#242424] text-sm dark:text-[#F5FBFF]">تلفن
+                                پشتیبانی<br class="md:hidden" /> ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                        </div>
+                        <div
+                            class="border border-[#F5F6F8] flex items-center py-7 px-4 rounded-2xl gap-2 md:border-0 md:py-0 dark:bg-[#081021]">
+                            <div
+                                class="bg-[#F5FBFF] w-10 h-10 rounded-full flex items-center justify-center md:bg-inherit dark:bg-[#1B293C]">
+                                <i class="fa fa-fax text-[#2C7EF8] md:text-[#242424] dark:text-white"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <p class="text-[10px] font-normal text-[#242424] text-sm dark:text-[#F5FBFF]">فکس<br
+                                    class="md:hidden" /> ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="py-4">
+            <p class="text-xs text-[#666666] font-normal text-center mt-8 mx-2 leading-6 md:text-sm dark:text-white">
+                تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
